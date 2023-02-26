@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat&family=Nunito:wght@400;600;700&family=Pacifico&family=Poppins:wght@200;500;600;700&family=Staatliches&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none !important;
+    border: none;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #F7F7F7;
+}
+
+.sub-heading {
+    text-align: center;
+    color: #696BFD;
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
+.heading {
+    text-align: center;
+    color: #192A56;
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn-home {
+    margin-top: 1rem;
+    display: inline-block;
+    border: none;
+    font-size: 1.7rem;
+    color: #FFF;
+    background: #192A56;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    transition: all .4s;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.btn-home:hover {
+    background: #696BFD;
+    letter-spacing: .1rem;
+    color: #FFF;
+}
+
+.btn-sm {
+    margin-top: 1rem;
+    display: inline-block;
+    border: none;
+    font-size: 1.2rem;
+    color: #FFF;
+    background: #192A56;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .7rem 2rem;
+    transition: all .4s;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.btn-sm:hover {
+    background: #696BFD;
+    letter-spacing: .1rem;
+    color: #FFF;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #FFF;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    color: #192A56;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i {
+    color: #696BFD;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    margin-right: 4px;
+    color: #666;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: #FFF;
+    background: #696BFD;
+}
+
+header .icon i,
+header .icon a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #192A56;
+    border-radius: 50%;
+    background: #EEE;
+    transition: all .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+header .icon i:hover,
+header .icon a:hover {
+    color: #FFF;
+    background: #696BFD;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+header .icon #menu-bars {
+    display: none;
+}
+
+#search {
+    position: fixed;
+    top: -110%; left: 0;
+    height: 100%; width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#search.active {
+    top: 0;
+}
+
+#search #search-box {
+    width: 50rem;
+    border-bottom: .1rem solid #FFF;
+    padding: 1rem 0;
+    color: #FFF;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#search #search-box::placeholder {
+    color: #EEE;
+}
+
+#search #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#search label {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#search label:hover {
+    color: #696BFD;
+}
+
+#search #close {
+    position: absolute;
+    color: #FFF;
+    cursor: pointer;
+    top: 2rem; right: 3rem;
+    font-size: 5rem;
+}
+
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 11.2rem;
+    padding-bottom: 4.7rem;
+}
+
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img {
+    width: 100%;
+    height: 70vh;
+}
+
+.home .home-slider .slide .content span {
+    color: #696BFD;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.home .home-slider .slide .content h3 {
+    color: #192A56;
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .content p {
+    color: #666;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader-container img {
+    width: 45rem;
+}
+
+.loader-container.fade-out {
+    top: 110%;
+    opacity: 0;
+}
+
+.overlay {
+    position: absolute;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    background-color: #FFF;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.text {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    text-align: center;
+    line-height: 15px;
+    font-family: 'Bad Script', cursive;
+}
+
+.text a{
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+.text a:hover{
+    color: #696BFD;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.overlayPopup {
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.card:hover .overlayPopup{
+    width: 100%;
+}
+
+#artikel .card .content #selengkapnya {
+    color: #696BFD; 
+    font-size: 1.6rem;
+}
+
+#artikel .card .content #selengkapnya:hover {
+    letter-spacing: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .icon #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #FFF;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #EEE;
+        text-align: center;
+    }
+
+    #search #search-box {
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .image img {
+        height: 48vh;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+}
